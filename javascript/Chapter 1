@@ -1,0 +1,71 @@
+//JavaScript practice from JavaScript Cookbook
+
+
+//PROBLEM 1
+
+// var sentence = "This is one sentence. This is a sentence with a list of items:" + "cherries, oranges, apples, bananas. That was the list of items.";
+// var start = sentence.indexOf(':');
+// var end = sentence.indexOf('.', start+1);
+
+//Ver 1
+// var listStr = sentence.substring(start+1, end);
+// console.log(listStr);
+// var fruits = listStr.split(',');
+// console.log(fruits);
+
+//Ver 2
+// var listStr = sentence.substr(start+1, end-start);
+// console.log(listStr);
+// var fruits = listStr.split(',');
+// console.log(fruits);
+
+// fruits.forEach(function(element, index, array){
+//   array[index] = element.trim();
+// });
+// console.log(fruits);
+
+//Regular Expression RegEx
+// var fruits = listStr.split(/\s*, \s*/);
+// console.log(fruits);
+
+//Method Chaining
+// var start = sentence.indexOf(':');
+// var end = sentence.indexOf('.', start+1);
+
+// var fruits = sentence.substring(start+1, end).split(',');
+// console.log(fruits);
+// fruits.forEach(function(element, index, array){
+//   array[index] = element.trim();
+// });
+// console.log(fruits);
+
+//PROBLEM 1 test area
+
+// var favorites = "Here are my most favorite Transformers: Optimus Prime, Ultra Magnus, Hot Rod, Sideswipe, Sunstreaker.";
+
+// var startsearch = favorites.indexOf(":");
+// var finish = favorites.indexOf(".",startsearch+1);
+
+// var charList = favorites.substr(startsearch+1, finish-startsearch).split(",");
+// // console.log(charList);
+
+// charList.forEach(function(elmt, indx, arry){
+//   arry[indx] = elmt.trim()
+// });
+// console.log(charList);
+
+// var games = "go buy Halo 3, RE2, Spiderman, COD4";
+
+// var start = games.indexOf("y");
+// console.log(start);
+// var end = games.indexOf("4");
+
+// var list = games.substr(start+1, end-start).split(",");
+
+// console.log(list);
+
+// list.forEach(function(elem, indx, arry){
+//   arry[indx]=elem.trim()
+// });
+// console.log(list);
+
