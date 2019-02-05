@@ -110,11 +110,18 @@
 
 // console.log(testStr);
 
+//Ver 1
 // var searchString = "Now is the time, this is the tame!";
 // var re = /t\w{2}e/g;
 // var replacement = searchString.replace(re, "place");
 // console.log(replacement);
 
+//Ver 2
+// var re = new RegExp('t\\w{2}e',"g");
+// var replacement = searchString.replace(re,"place");
+// console.log(replacement);
+
+//Test Area
 // var testStr = "I going to replace the word big with the word small.";
 // var re = /b\w{1}g/g;
 // var testRep = testStr.replace(re, "small");
