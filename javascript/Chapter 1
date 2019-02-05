@@ -69,3 +69,53 @@
 // });
 // console.log(list);
 
+// var title = "this is a movie list: movie 1, movie 2, movie 3.";
+// var start = title.indexOf(":");
+// var end = title.indexOf("."); 
+
+// var movieList = title.substr(start+1, end-start).split(",");
+// console.log(movieList);
+
+// movieList.forEach(function(elem, indx, arry){
+//   arry[indx]=elem.trim();
+// });
+
+// console.log(movieList);
+
+//NEXT DAY
+
+//PROBLEM 2
+//Checking for an Existing, Nonempty String
+
+//Solution for testing nonempty string
+// if(typeof unknownVariable === 'string' && unknownVariable.length > 0);
+//Solution for testing for a string both string literal and string object
+// if(((typeof unknownVariable != 'undefined' && unknownVariable) &&
+// unknownVariable.length() > 0) && typeof unknownVariable.valueOf() == 'string');
+
+// if(typeof unknownVariable == 'string' && unknownVariable.length > 0);
+
+// var str = new String('test');
+
+// if(((typeof unknownVariable != 'undefined' && unknownVariable) && 
+// (typeof unknownVariable.valueOf() == "string")) &&
+// unknownVariable.length > 0);
+
+// var resultString = "<p>This page \u00A9 Shelly Powers </p>";
+
+// var blk = document.getElementById("result");
+// blk.innerHTML = resultString;
+
+// var testStr = 'He said, "You can\'t use single quotes"' + " but, he\'s and idiot.";
+
+// console.log(testStr);
+
+// var searchString = "Now is the time, this is the tame!";
+// var re = /t\w{2}e/g;
+// var replacement = searchString.replace(re, "place");
+// console.log(replacement);
+
+// var testStr = "I going to replace the word big with the word small.";
+// var re = /b\w{1}g/g;
+// var testRep = testStr.replace(re, "small");
+// console.log(testRep);
