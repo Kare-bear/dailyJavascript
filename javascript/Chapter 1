@@ -126,3 +126,22 @@
 // var re = /b\w{1}g/g;
 // var testRep = testStr.replace(re, "small");
 // console.log(testRep);
+
+// var testStr = "Let's replace the word purple as many times as purple apprears.";
+// var re = /p\w{4}e/g;
+// var testRep = testStr.replace(re, "indigo");
+// console.log(testRep);
+//only the first instance of purple
+// var re= /p\w{4}e/;
+// var testRep = testStr.replace(re, "indigo");
+// console.log(testRep);
+
+// var testStr = "No, No ,No, No, No, No, No, No, No, No, please God, No!"
+// var re = /N\w{0}o/g;
+// var testRep = testStr.replace(re, "Yes");
+// console.log(testRep);
+
+// var testStr = 'I am Super Man!!';
+// var re = /M\w{1}n/g;
+// var testRep = testStr.replace(re, "Girl");
+// console.log(testRep);
